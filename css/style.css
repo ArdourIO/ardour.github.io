@@ -119,3 +119,17 @@ form button {
     font-size: .75em
   }
 }
+
+body > eager-app {
+  display: block;
+  text-align: center
+}
+
+body > eager-app > a[href^="http://twitter.com"], body > eager-app > a[href^="http://facebook.com"] {
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+body > eager-app > a[href^="http://twitter.com"]:not(:hover) path, body > eager-app > a[href^="http://facebook.com"]:not(:hover) path {
+  fill: #c0c0c0
+}
